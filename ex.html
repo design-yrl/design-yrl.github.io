@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>seoon.</title>
+
+<!--aos head 영역-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link rel="icon" href="img/icon_logo.png">
+
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+   *{padding:0px; margin:0px; list-style: none; font-family: "ubuntu";}
+
+    /*프레임, 공통*/
+    #frame{width: 1920px; height: 4170px; margin: auto; overflow: hidden; background: black;}
+
+    /*visual 0*/
+    #visual{height: 1080px;}
+
+    #v0{position: absolute;}
+    #v0 #logo{position: absolute; top: 84px; left: 300px;}
+
+    #v0 #nav{position: absolute; top: 97px; left: 598px; width: 1020px; z-index: 4;}
+    #v0 #nav li{display: inline-block; font-size: 13.5pt; font-weight: 700; letter-spacing: 1.2px;}
+    #v0 #nav li~li{margin-left: 223px;}
+    #v0 #nav a:link{text-decoration: none; color: #2D4580;}
+    #v0 #nav a:visited{color: #2D4580;}
+    #v0 #nav a:hover{color: #F3F2F2;}
+
+    /*visual 1*/
+    #v1{position: absolute;}
+    #v1 .text1{position: absolute; top: 552px; left: 300px; z-index: 4;}
+
+    /*visual 2*/
+    #v2{position: absolute;}
+    #v2 .yellow{position: absolute; left: 1197px; z-index: 1;}
+
+    /*visual 3*/
+    #v3{position: absolute;}
+    #v3 .blue{position: absolute; left: 1197px; z-index: 0;}
+
+    /*p1*/
+    #h1{height: 1784px;}
+
+    #p1{position: absolute;}
+    #p1 .c{position: absolute; top: 200px; left: 300px;}
+    #p1 .img1{position: absolute; top: 304px; left: 300px;}
+    #p1 .img2{position: absolute; top: 874px; left: 636px;}
+    #p1 .img3{position: absolute; top: 874px; left: 1198px;}
+
+    /*p2*/
+    #h2{height: 705px;}
+
+    #p2{position: absolute;}
+    #p2 .c{position: absolute; left: 300px;}
+
+    /*next*/
+    #next{position: absolute; width: 1920px;}
+    #next .basic {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: .5s ease;
+    }
+    #next:hover .overlay {
+        width: 100%;
+    }
+ 
+    /**/
+    #top{position: fixed; right: 50px; bottom: 50px;}
+    
+</style>
+</head>
+
+<body>
+
+    <div id="frame">
+        <div id="visual">
+            <div id="v0" >
+                <div id="bg"><img src="img/03_bg.png"></div>
+                <div id="logo"><a href="index.html"><img src="img/00_logo.png"></a></div>
+                <ul id="nav">
+                    <li><a href="branding.html">branding</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="#">experience</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                </ul>
+            </div>
+
+            <div id="v1">
+                <div class="text1" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1200"><img src="img/03_text1.png"></div>
+            </div>
+
+            <div id="v2">
+                <div class="yellow"><img src="img/03_yellow.png"></div>
+            </div>
+
+            <div id="v3">
+                <div class="blue"><a href="portfolio.html"><img src="img/03_blue.png"></a></div>
+            </div>
+
+        </div>
+
+        <!--------------------------------------------------------->
+
+        <div id="h1">
+            <div id="p1" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1200">
+                <div class="c"><img src="img/03_p1_text.png"></div>
+                <div class="img1"><img src="img/03_p1_img1.png" onmouseover="this.src='img/03_p1_img1h.png'"
+                    onmouseout="this.src='img/03_p1_img1.png'"width="847px" height="520px" onmouseenter="zoomIn(event)" 
+                    onmouseleave="zoomOut(event)"></div>
+                <div class="img2"><img src="img/03_p1_img2.png" onmouseover="this.src='img/03_p1_img2h.png'"
+                    onmouseout="this.src='img/03_p1_img2.png'"width="512px" height="710px" onmouseenter="zoomIn(event)" 
+                    onmouseleave="zoomOut(event)"></div>
+                <div class="img3"><img src="img/03_p1_img3.png" onmouseover="this.src='img/03_p1_img3h.png'"
+                    onmouseout="this.src='img/03_p1_img3.png'"width="422px" height="422px" onmouseenter="zoomIn(event)" 
+                    onmouseleave="zoomOut(event)"></div>
+            </div>
+        </div>
+
+        <div id="h2">
+            <div id="p2" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1200">
+                <div class="c"><img src="img/03_p2.png"></div>
+            </div>
+        </div>
+
+        <!--------------------------------------------------------->
+
+        <div id="next">
+            <a href="portfolio.html"><img src="img/03_next.png" class="basic">
+            <div class="overlay"><img src="img/03_next_h.png"></div></a>
+        </div>
+
+        <div id="top">
+            <a href="#"><img src="img/TOP.png" onmouseover="this.src='img/TOP_h.png'"
+                onmouseout="this.src='img/TOP.png'"width="93px" height="93px"/></a>
+        </div>
+    </div>
+
+    <!--aos body 영역-->
+    <script> AOS.init(); </script>
+    
+   
+</body>
+
+<script>
+    function zoomIn(event) {
+      event.target.style.transform = "scale(1.05)";
+      event.target.style.zIndex = 1;
+      event.target.style.transition = "all 0.5s";
+    }
+  
+    function zoomOut(event) {
+      event.target.style.transform = "scale(1)";
+      event.target.style.zIndex = 0;
+      event.target.style.transition = "all 0.5s";
+    }
+  </script>
+
+</html>
