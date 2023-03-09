@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Mobile Landing</title>
+
+<!--aos head 영역-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link rel="stylesheet" href="css/DB_banner10.css" type="text/css"></link>
+<link rel="stylesheet" href="css/style.css" type="text/css"></link>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.DB_slideLogoMove.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+<style type="text/css">
+   *{padding:0px; margin:0px; list-style: none; font-family: "Noto Sans CJK KR";}
+
+    /*프레임, 공통*/
+    #frame{width: 1920px; height: 12933px; margin: auto; overflow: hidden; background: #1d1e33;}
+
+    /*0*/
+    #p0{position: absolute;}
+    #p0 .bg{position: absolute;}
+    #p0 .title{position: relative; top: 240px; left: 360px;}
+    #p0 .info{position: relative; top: 525px; left: 360px;}
+
+    /*1*/
+    #p1{position: absolute; top: 1186px;}
+    #p1 .text{position: relative; left: 919px;}
+    #p1 .mobile{position: relative; top: -624px; left: 342px;}
+ 
+    /*2*/
+    #p2{position: absolute; top: 2118px;}
+    #p2 .bg{position: absolute;}
+    #p2 .conts{position: relative; top: 260px; left: 291px; z-index: 2;}
+
+    /*3-5*/
+    #p3{position: absolute; top: 3312px;}
+    #p3 .bg{position: absolute;}
+    #p3 .conts{position: relative; top: 260px; left: 360px; z-index: 2;}
+    
+    /*4*/
+    #p4{position: absolute; top: 4723px;}
+    #p4 .conts{position: relative; top: 0px; left: 360px; z-index: 2;}
+
+    /*5*/
+    #p5{position: absolute; top: 5679px;}
+    #p5 .conts{position: relative; top: 0px; left: 360px; z-index: 2;}
+
+    /*6*/
+    #p6{position: absolute; top: 6781px;}
+    #p6 .bg{position: absolute;}
+    #p6 .text{position: relative; top: 190px; left: 290px;}
+    #p6 .mobile{position: relative; top: -336px;}
+    #p6 .login{position: relative; left: 934px; top: 0px; z-index: 2;}
+    #p6 .alarm{position: relative; left: 1221px; top: -570px;}
+    
+    /*7 diary*/
+    #p7{position: absolute; top: 7956px;}
+    #p7 .text{position: relative; top: -67px; left: 1121px;}
+    #p7 .mobile{position: relative; top: -590px;}
+    #p7 .diary1{position: relative; left: 338px; top: 0px;}
+    #p7 .diary2{position: relative; left: 625px; top: -570px; z-index: 2;}
+
+    /*8 seed*/
+    #p8{position: absolute; top: 8872px;}
+    #p8 .text{position: relative; top: -70px; left: 291px;}
+    #p8 .mobile{position: relative; top: -602px;}
+    #p8 .seed{position: relative; left: 934px; top: -570px; z-index: 2;}
+    #p8 .statistics{position: relative; left: 1221px; top: 0px;}
+
+    /*9 set*/
+    #p9{position: absolute; top: 9786px;}
+    #p9 .text{position: relative; top: -70px; left: 1120px;}
+    #p9 .mobile{position: relative; top: -603px;}
+    #p9 .diary1{position: relative; left: 338px; top: 0px;}
+    #p9 .diary2{position: relative; left: 625px; top: -570px; z-index: 2;}
+
+    /*10*/
+    #p10{position: absolute; top: 10701px;}
+    #p10 .bg{position: absolute;}
+    #p10 .title{position: relative; left: 722px; top: 178px;}
+    #p10 .process{position: relative; top: 258px; left: 360px; z-index: 2;}
+    #p10 .process li{float: left;}
+    #p10 .process li~li{margin-left: 176px;}
+
+    /*11*/
+    #p11{position: absolute; top: 11901px;}
+    #p11 .bg{position: absolute;}
+    #p11 .title{position: absolute; top: 259px; left: 360px; z-index: 1;}
+
+    /**/
+    #top{position: fixed; right: 0px; bottom: 150px;}
+    
+</style>
+</head>
+
+<body>
+
+    <div id="frame">
+        <div id="p0" >
+            <div class="bg"><img src="img/00_visual.png"></div>
+            <div class="title" data-aos="fade-right" data-aos-duration="1500"><img src="img/00_title.png"></div>
+            <div class="info"><img src="img/00_info.png"></div>
+        </div>
+
+        <ul id="p1">
+            <li class="text" data-aos="fade-down" data-aos-duration="1500"><img src="img/01_overview.png"></li>
+            <li class="mobile" data-aos="fade-right" data-aos-duration="1500"><img src="img/01_splash.png"></li>
+        </ul>
+
+        <div id="p2">
+            <div class="bg"><img src="img/02_bg.png"></div>
+            <div class="conts" data-aos="fade-down" data-aos-duration="1500"><img src="img/02_conts.png"></div>
+        </div>
+
+        <div id="p3">
+            <div class="bg"><img src="img/03-05_bg.png"></div>
+            <div class="conts" data-aos="fade-down" data-aos-duration="1500"><img src="img/03_conts.png"></div>
+        </div>
+
+        <div id="p4">
+            <div class="conts" data-aos="fade-down" data-aos-duration="1500"><img src="img/04_conts.png"></div>
+        </div>
+
+        <div id="p5">
+            <div class="conts" data-aos="fade-down" data-aos-duration="1500"><img src="img/05_conts.png"></div>
+        </div>
+
+        <div id="p6">
+            <div class="bg"><img src="img/06-09_bg.png"></div>
+            <div class="text" data-aos="fade-down" data-aos-duration="1500"><img src="img/06_text.png"></div>
+            <ul class="mobile">
+                <li class="login" data-aos="fade-down" data-aos-duration="1500"><img src="img/06_login.png"></li>
+                <li class="alarm" data-aos="fade-up" data-aos-duration="1500"><img src="img/06_alarm.png"></li>
+            </ul>
+           
+        </div>
+
+        <div id="p7">
+            <div class="text" data-aos="fade-down" data-aos-duration="1500"><img src="img/07_text.png"></div>
+            <ul class="mobile">
+                <li class="diary1" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="main">
+                        <div id="slide">
+                            <div><img src="img/diary1_basic.png"></div>
+                            <div><img src="img/diary1_delete.png"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="diary2" data-aos="fade-up" data-aos-duration="1500">
+                    <div id="slide2">
+                        <div><img src="img/diary2_basic.png"></div>
+                        <div><img src="img/diary2_keyword.png"></div>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+
+        <div id="p8">
+            <div class="text" data-aos="fade-down" data-aos-duration="1500"><img src="img/08_text.png"></div>
+            <ul class="mobile">
+                <li class="statistics" data-aos="fade-down" data-aos-duration="1500"><img src="img/08_statistics.png"></li>
+                <li class="seed" data-aos="fade-up" data-aos-duration="1500"><img src="img/08_seed.png"></li>
+            </ul>
+        </div>
+
+        <div id="p9">
+            <div class="text" data-aos="fade-down" data-aos-duration="1500"><img src="img/09_text.png"></div>
+            <ul class="mobile">
+                <li class="diary1" data-aos="fade-down" data-aos-duration="1500"><img src="img/09_settings1.png"></li>
+                <li class="diary2" data-aos="fade-up" data-aos-duration="1500"><img src="img/09_settings2.png"></li>
+            </ul>
+        </div>
+
+        <div id="p10">
+            <div class="bg"><img src="img/10_bg.png"></div>
+            <div class="title" data-aos="fade-down" data-aos-duration="1500"><img src="img/10_title.png"></div>
+            <ul class="process" data-aos="fade-down" data-aos-duration="1500">
+                <li class="planning"><img src="img/10_planning.png"></li>
+                <li class="design"><img src="img/10_design.png"></li>
+                <li class="developing"><img src="img/10_developing.png"></li>
+            </ul>
+        </div>
+
+        <div id="p11">
+            <div class="bg"><img src="img/11_bg.png"></div>
+            <div class="title" data-aos="zoom-in" data-aos-duration="1500"><img src="img/11_epilogue.png"></div>
+        </div>
+
+        <div id="top">
+            <a href="#"><img src="img/00_top.png"></a>
+        </div>
+    </div>
+
+    <!--aos body 영역-->
+    <script> AOS.init(); </script>
+    
+   
+</body>
+
+
+</html>

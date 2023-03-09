@@ -1,0 +1,34 @@
+.main {
+    width:750px;
+    margin:0 auto;
+}
+#slide {
+    position:relative;
+    width:100%;
+    height:750px;
+    overflow:hidden;
+}
+#slide > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+#slide2 {
+    position:relative;
+    width:100%;
+    height:750px;
+    overflow:hidden;
+}
+#slide2 > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+
+
