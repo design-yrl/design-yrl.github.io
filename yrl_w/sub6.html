@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>BESPOKE</title>
+
+<link rel="stylesheet" href="css/DB_banner10.css" type="text/css"></link>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.DB_slideLogoMove.min.js"></script>
+
+<!--head 태그 내 추가-->
+<link rel="icon" href="img/title_logo.png">
+
+<style type="text/css">
+   *{padding:0px; margin:0px; list-style: none; font-family: "Noto Sans CJK KR";}
+
+    /*프레임, 공통*/
+    #frame{width: 1920px; height: 4538px; margin: auto; overflow: hidden; background: #1a1a1a;}
+
+    /*0*/
+    #p0{position: absolute;}
+    #p0 .bg{position: relative; top:0px; z-index: 0; opacity: 0%;}
+
+    #nav{position: absolute; top: 0px; z-index: 1;}
+    #nav .nav_bg{position: absolute;}
+    #nav #logo{position: relative; top: 24px; left: 310px;}
+    #nav .menu{position: relative; left: 510px;}
+    #nav .menu li{float: left; margin-right: 71px;}
+    #nav .menu .second{position: relative; top: -1px;}
+    #nav .menu .third{position: relative; top: 3px;}
+    #nav .menu .forth{position: relative; top: -1px;}
+    #nav .menu .icons{position: relative; left: 200px;}
+    #nav .hoverline{position: relative; left: 483px; top: -58.9px; mix-blend-mode: lighten; z-index: 1;}
+    #nav .hoverline li{float: left;}
+    #nav .hoverline .second{margin-left: 28px;}
+    #nav .hoverline .third{margin-left: 45px;}
+    #nav .hoverline .forth{margin-left: 28px;}
+    #nav .hoverline .fifth{margin-left: 16px;}
+
+    #nav .hoverline a:link{opacity: 0%;}
+    #nav .hoverline a:hover{opacity: 100%;}
+
+    #nav .fixed{clear: both; position: relative; left: 1042px; top: -143.1px; mix-blend-mode: lighten;}
+
+    #nav .hoverline .fifth{opacity: 0%;}
+    
+
+    /*1*/
+    #img{position: absolute;}
+
+    /*Rolling*/
+    #rolling{position: absolute; top: 2069px;}
+    #DB_banner10{position: relative; left: 0px;}
+    
+
+
+    /**/
+    #quick{position: fixed; right: 0px; bottom: 150px;}
+    
+</style>
+</head>
+
+<body>
+
+    <div id="frame">
+        <div id="p0" >
+            <div class="bg"><img src="img/00_bg.png"></div>
+            <div id="nav">
+                <div class="nav_bg"><img src="img/00_nav_bg.png"></div>
+                <div id="logo"><a href="index.html"><img src="img/00_nav_logo.png"></a></div>
+                <ul class="menu">
+                    <li class="first"><a href="#"><img src="img/00_nav_1.png"></a></li>
+                    <li class="second"><a href="#"><img src="img/00_nav_2.png"></a></li>
+                    <li class="third"><a href="#"><img src="img/00_nav_3.png"></a></li>
+                    <li class="forth"><a href="#"><img src="img/00_nav_4.png"></a></li>
+                    <li class="fifth"><a href="#"><img src="img/00_nav_5.png"></a></li>
+                    <li class="icons"><img src="img/00_nav_icons.png"></li>
+                </ul>
+                <ul class="hoverline">
+                    <li class="first"><a href="sub2.html"><img src="img/00_nav_hoverline2.png"></a></li>
+                    <li class="second"><a href="sub4.html"><img src="img/00_nav_hoverline2.png"></a></li>
+                    <li class="third"><a href="sub3.html"><img src="img/00_nav_hoverline2.png"></a></li>
+                    <li class="forth"><a href="sub5.html"><img src="img/00_nav_hoverline2.png"></a></li>
+                    <li class="fifth"><a href="#"><img src="img/00_nav_hoverline2.png"></a></li>
+                </ul>
+                <div class="fixed"><a href="#"><img src="img/00_nav_hoverline2.png"></a></div>
+            </div>
+        </div>
+
+        <div id="img">
+            <img src="img/sub6.png">
+        </div>
+
+        <div id="rolling">
+        <!--�����κ���-->
+        <div id="DB_banner10">
+            <div class="DB_mask">
+                <ul class="DB_imgSet">
+                    <li><a href="#"><img src="img/sub6_r1.png" alt="냉장고/김치냉장고"/></a></li>
+                    <li><a href="#"><img src="img/sub6_r2.png" alt="전자레인지/오븐/큐커"/></a></li>
+                    <li><a href="#"><img src="img/sub6_r3.png" alt="정수기"/></a></li>
+                    <li><a href="#"><img src="img/sub6_r4.png" alt="식기세척기"/></a></li>
+                    <li><a href="#"><img src="img/sub6_r5.png" alt="인덕션"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript">
+                $('#DB_banner10').DB_slideLogoMove({
+                    key:'b28551',                   //���̼���Ű
+                    moveSpeed:20,             //�̵��ӵ�(�и���)
+                    overMoveSpeed:15,         //��ư�����ӵ�
+                    dir:'left',               //����('left','right')
+                    overAlpha:0.6             //������ ���İ�(0~1)
+                });
+            </script>
+        <!--/�����κ���-->
+        </div>
+
+        <ul id="quick">
+            <li class="top">
+                <a href="#"><img src="img/00_q_top.png"
+                onmouseover="this.src='img/00_q_top_h.png'"
+                onmouseout="this.src='img/00_q_top.png'"width="60px" height="60px"/></a>
+            </li>
+            <li class="mode">
+                <a href="sub6_.html"><img src="img/00_q_mode.png"
+                onmouseover="this.src='img/00_q_mode_h.png'"
+                onmouseout="this.src='img/00_q_mode.png'"width="60px" height="60px"/></a>
+            </li>
+        </ul>
+    </div>
+    
+   
+</body>
+
+
+</html>

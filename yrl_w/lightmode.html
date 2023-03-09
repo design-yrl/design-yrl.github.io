@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>BESPOKE</title>
+
+<!--aos head 영역-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!--head 태그 내 추가-->
+<link rel="icon" href="img/title_logo.png">
+
+<style type="text/css">
+   *{padding:0px; margin:0px; list-style: none; font-family: "Noto Sans CJK KR";}
+
+    /*프레임, 공통*/
+    #frame{width: 1920px; height: 4100px; margin: auto; overflow: hidden; background: #f4f4f4;}
+
+    /*0*/
+    #p0{position: absolute;}
+    #p0 .bg{position: relative; top:0px; z-index: 0;}
+
+    #nav{position: absolute; top: 0px;}
+    #nav .nav_bg{position: absolute;}
+    #nav #logo{position: relative; top: 24px; left: 310px;}
+    #nav .menu{position: relative; left: 510px;}
+    #nav .menu li{float: left; margin-right: 71px;}
+    #nav .menu .second{position: relative; top: -1px;}
+    #nav .menu .third{position: relative; top: 3px;}
+    #nav .menu .forth{position: relative; top: -1px;}
+    #nav .menu .icons{position: relative; left: 200px;}
+    #nav .hoverline{position: relative; left: 483px; top: -58.9px; mix-blend-mode: lighten;}
+    #nav .hoverline li{float: left;}
+    #nav .hoverline .second{margin-left: 28px;}
+    #nav .hoverline .third{margin-left: 45px;}
+    #nav .hoverline .forth{margin-left: 28px;}
+    #nav .hoverline .fifth{margin-left: 18px;}
+
+    #nav .hoverline a:link{opacity: 0%;}
+    #nav .hoverline a:hover{opacity: 100%;}
+    
+    #p0 .g1{position: absolute; top: 108px; left: 310px;}
+    #p0 .g2{float: left;}
+    #p0 .text{margin-top: 170px; margin-bottom: 61px;}
+    #p0 .bottom li{float: left;}
+    #p0 .bottom .button{margin-right: 164px;}
+    #p0 .bottom .aL{margin-left: 20px; margin-right: 10px;}
+    #p0 .img{margin-left: 214px;}
+    #p0 .img li{float: left;}
+    #p0 .img li~li{margin-left: 20px;}
+    #p0 .img li:nth-child(2){position: relative; top: 40px;}
+    #p0 .img li:last-child{position: relative; top: 28px;}
+
+    #p0 .boxes{clear: both; position: relative; left: 288px; top: -118px;}
+    #p0 .boxes li{float: left;}
+    #p0 .boxes li~li{margin-left: -24px;}
+
+    /*1*/
+    #p1{position: absolute; top: 1200px;}
+    #p1 .title{position: relative; left: 310px;}
+    #p1 .tab{position: relative; color: #1a1a1a; left: 310px; top: 47px;}
+    #p1 .tab li{float: left; font-size: 20px;}
+    #p1 .tab .best{font-weight: 500;}
+    #p1 .tab .new{font-weight: 400; margin-left: 57px;}
+
+    #p1 .tab .best a:link{text-decoration: none; color: #1a1a1a;}
+    #p1 .tab .new a:link{text-decoration: none; color: #a1a1a1;}
+    #p1 .tab .best a:visited{color: #1a1a1a;}
+    #p1 .tab .new a:visited{color: #a1a1a1;}
+    #p1 .tab .new a:hover{font-weight: 500; color: #1a1a1a;}
+
+    #p1 .products{clear: both; position: relative; top: 84px; left: 288px;}
+    #p1 .products li{float: left;}
+    #p1 .products li~li{margin-left: -24px;}
+ 
+    /*2*/
+    #p2{position:absolute; top: 2401px;}
+    #p2 .title{position:relative; left: 310px;}
+
+    #p2 .boxes{clear: both; position: relative; left: 288px; top: 52px;}
+    #p2 .boxes li{float: left;}
+    #p2 .boxes li~li{margin-left: -24px;}
+
+    #p2 .select{clear: both; position: relative; left: 288px; top: 13px; z-index: 2;}
+    #p2 .select li{float: left;}
+    #p2 .select li~li{margin-left: -24px;}
+
+    #p2 .drop{clear: both; position: relative; left: 288px; top: -36px; z-index:1;}
+    #p2 .drop li{float: left;}
+    #p2 .drop li~li{margin-left: -24px;}
+
+    #p2 .drop a:link{opacity: 0%;}
+    #p2 .drop a:hover{opacity: 100%;}
+
+    #p2 .button{clear: both; position: relative; left: 860px; top: -309px;}
+
+    /*3*/
+    #p3{position:absolute; top: 3079px;}
+    #p3 .title{position:relative; left: 310px;}
+    #p3 .tab{position: relative; color: #1a1a1a; left: 310px; top: 47px;}
+    #p3 .tab li{float: left; font-size: 20px;}
+    #p3 .tab .event{font-weight: 500;}
+    #p3 .tab .present{font-weight: 400; margin-left: 57px;}
+
+    #p3 .tab .event a:link{text-decoration: none; color: #1a1a1a;}
+    #p3 .tab .present a:link{text-decoration: none; color: #a1a1a1;}
+    #p3 .tab .event a:visited{color: #1a1a1a;}
+    #p3 .tab .present a:visited{color: #a1a1a1;}
+    #p3 .tab .present a:hover{font-weight: 500; color: #1a1a1a;}
+
+    #p3 .boxes{clear: both; position: relative; top: 79px; left: 288px; z-index: 1;}
+    #p3 .boxes li{float: left;}
+    #p3 .boxes li~li{margin-left: -24px;}
+
+    #p3 .text{clear: both; position: relative; top: 70px; left: 310px;}
+    #p3 .text li{float: left;}
+    #p3 .text li~li{margin-left: 20px;}
+
+    /*Footer*/
+    #footer{position: absolute; top: 3949px;}
+
+
+    /**/
+    #quick{position: fixed; right: 0px; bottom: 150px;}
+    
+</style>
+</head>
+
+<body>
+
+    <div id="frame">
+        <div id="p0" >
+            <div class="bg"><img src="img/00_bg_.png"></div>
+            <div id="nav">
+                <div class="nav_bg"><img src="img/00_nav_bg_.png"></div>
+                <div id="logo"><a href="#"><img src="img/00_nav_logo_.png"></a></div>
+                <ul class="menu">
+                    <li class="first"><a href="#"><img src="img/00_nav_1_.png"></a></li>
+                    <li class="second"><a href="#"><img src="img/00_nav_2_.png"></a></li>
+                    <li class="third"><a href="#"><img src="img/00_nav_3_.png"></a></li>
+                    <li class="forth"><a href="#"><img src="img/00_nav_4_.png"></a></li>
+                    <li class="fifth"><a href="#"><img src="img/00_nav_5_.png"></a></li>
+                    <li class="icons"><img src="img/00_nav_icons_.png"></li>
+                </ul>
+                <ul class="hoverline">
+                    <li class="first"><a href="sub2_.html"><img src="img/00_nav_hoverline2_.png"></a></li>
+                    <li class="second"><a href="sub4_.html"><img src="img/00_nav_hoverline2_.png"></a></li>
+                    <li class="third"><a href="sub3_.html"><img src="img/00_nav_hoverline2_.png"></a></li>
+                    <li class="forth"><a href="sub5_.html"><img src="img/00_nav_hoverline2_.png"></a></li>
+                    <li class="fifth"><a href="sub6_.html"><img src="img/00_nav_hoverline2_.png"></a></li>
+                </ul>
+            </div>
+
+            <div class="g1">
+                <div class="g2">
+                    <div class="text"><img src="img/00_text_.png"></div>
+                    <ul class="bottom">
+                        <li class="button"><a href="#"><img src="img/00_button_.png"></a></li>
+                        <li class="page"><img src="img/00_page_.png"></li>
+                        <li class="aL"><a href="lightmode2.html"><img src="img/00_arrow_L_.png"></a></li>
+                        <li class="aR"><a href="lightmode2.html"><img src="img/00_arrow_R_.png"></a></li>
+                    </ul>
+                </div>
+                <div class="g2">
+                    <ul class="img">
+                        <li data-aos="fade-up" data-aos-duration="1000"><img src="img/00_img_1_.png"></li>
+                        <li data-aos="fade-down" data-aos-duration="1500"><img src="img/00_img_2_.png"></li>
+                        <li data-aos="fade-up" data-aos-duration="2000"><img src="img/00_img_3_.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="boxes">
+                <li class="box1"><img src="img/00_box1_.png"></li>
+                <li class="box2"><img src="img/00_box2_.png"></li>
+                <li class="box2"><img src="img/00_box3_.png"></li>
+                <li class="box3"><img src="img/00_box4_.png"></li>
+            </ul>
+        </div>
+
+        <div id="p1">
+            <div class="title"><img src="img/01_title_.png"></div>
+            <ul class="tab">
+                <li class="best"><a href="#">베스트</a></li>
+                <li class="new"><a href="#">신제품</a></li>
+            </ul>
+            <ul class="products">
+                <li class="product1"><a href="sub1_.html"><img src="img/01_product1_.png"
+                    onmouseover="this.src='img/01_product1_h_.png'"
+                    onmouseout="this.src='img/01_product1_.png'"width="464px" height="842px"/></a></li>
+                <li class="product2"><a href="#"><img src="img/01_product2_.png"
+                    onmouseover="this.src='img/01_product2_h_.png'"
+                    onmouseout="this.src='img/01_product2_.png'"width="464px" height="842px"/></a></li>
+                <li class="product3"><a href="#"><img src="img/01_product3_.png"
+                    onmouseover="this.src='img/01_product3_h_.png'"
+                    onmouseout="this.src='img/01_product3_.png'"width="464px" height="842px"/></a></li>
+            </ul>
+        </div>
+
+        <div id="p2">
+            <div class="title"><img src="img/02_title_.png"></div>
+            <ul class="boxes">
+                <li class="box1"><img src="img/02_box1_.png"></li>
+                <li class="box2"><img src="img/02_box2_.png"></li>
+                <li class="box2"><img src="img/02_box3_.png"></li>
+                <li class="box3"><img src="img/02_box4_.png"></li>
+            </ul>
+
+            <ul class="select">
+                <li><a href="#"><img src="img/02_select_.png"></a></li>
+                <li><a href="#"><img src="img/02_select_.png"></a></li>
+                <li><a href="#"><img src="img/02_select_.png"></a></li>
+                <li><a href="#"><img src="img/02_select_.png"></a></li>
+            </ul>
+
+            <ul class="drop">
+                <li><a href="#"><img src="img/02_dropdown1_.png"></a></li>
+                <li><a href="#"><img src="img/02_dropdown2_.png"></a></li>
+                <li><a href="#"><img src="img/02_dropdown3_.png"></a></li>
+                <li><a href="#"><img src="img/02_dropdown4_.png"></a></li>
+            </ul>
+
+            <div class="button">
+                <a href="#"><img src="img/02_button_.png"></a>
+            </div>
+        </div>
+
+        <div id="p3">
+            <div class="title"><img src="img/03_title_.png"></div>
+            <ul class="tab">
+                <li class="event"><a href="#">기획전</a></li>
+                <li class="present"><a href="#">선물하기</a></li>
+            </ul>
+
+            <ul class="boxes">
+                <li>
+                    <a href="#"><img src="img/03_img1_.png"
+                    onmouseover="this.src='img/03_img1_h_.png'"
+                    onmouseout="this.src='img/03_img1_.png'"width="464px" height="464px"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/03_img2_.png"
+                    onmouseover="this.src='img/03_img2_h_.png'"
+                    onmouseout="this.src='img/03_img2_.png'"width="464px" height="464px"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/03_img3_.png"
+                    onmouseover="this.src='img/03_img3_h_.png'"
+                    onmouseout="this.src='img/03_img3_.png'"width="464px" height="464px"/></a>
+                </li>
+            </ul>
+
+            <ul class="text">
+                <li><img src="img/03_text1_.png"></li>
+                <li><img src="img/03_text2_.png"></li>
+                <li><img src="img/03_text3_.png"></li>
+            </ul>
+        </div>
+
+        <div id="footer">
+            <img src="img/04_footer_.png">
+        </div>
+
+        <ul id="quick">
+            <li class="top">
+                <a href="#"><img src="img/00_q_top_.png"
+                onmouseover="this.src='img/00_q_top_h_.png'"
+                onmouseout="this.src='img/00_q_top_.png'"width="60px" height="60px"/></a>
+            </li>
+            <li class="mode">
+                <a href="index.html"><img src="img/00_q_mode_.png"
+                onmouseover="this.src='img/00_q_mode_h_.png'"
+                onmouseout="this.src='img/00_q_mode_.png'"width="60px" height="60px"/></a>
+            </li>
+        </ul>
+    </div>
+
+    <!--aos body 영역-->
+    <script> AOS.init(); </script>
+    
+</body>
+
+
+</html>
