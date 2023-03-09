@@ -1,0 +1,7 @@
+#DB_banner10 *{list-style:none;padding:0;margin:0;border:0}
+#DB_banner10 {position:relative; width:1298px;}
+#DB_banner10 .DB_mask{height:882px; width:1298px; position:relative; overflow:hidden;}
+#DB_banner10 ul{white-space:nowrap; font-size:0}
+#DB_banner10 ul li{display:inline;}
+#DB_banner10 ul li{padding: 0px 20px}
+#DB_banner10 ul li img{vertical-align:middle;}

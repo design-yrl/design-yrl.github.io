@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Website Process Design</title>
+
+<!--aos head 영역-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link rel="stylesheet" href="css/DB_banner10.css" type="text/css"></link>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.DB_slideLogoMove.min.js"></script>
+
+<style type="text/css">
+   *{padding:0px; margin:0px; list-style: none; font-family: "Noto Sans CJK KR";}
+
+    /*프레임, 공통*/
+    #frame{width: 1920px; height: 14656px; margin: auto; overflow: hidden; background: #141414;}
+
+    /*0*/
+    #p0{position: absolute;}
+    #p0 .bg{position: absolute;}
+    #p0 .title{position: relative; top: 151px; left: 312px;}
+    #p0 .info{position: relative; top: 563px; left: 312px;}
+
+    /*1*/
+    #p1{position: absolute; top: 989px;}
+    #p1 img{position: relative; top: 197px; left: 295px;}
+ 
+    /*2*/
+    #p2{position: absolute; top: 1628px;}
+    #p2 .title{position: relative; top: 186px; left: 295px;}
+    #p2 .conts{position: relative; top: 286px;}
+
+    /*3-5*/
+    #p3{position: absolute; top: 2386px;}
+    #p3 .bg{position: absolute; top: 186px;}
+    #p3 .title{position: relative; z-index: 1; top: 372px; left: 295px;}
+    #p3 .icons{position: relative; z-index: 1; top: 472px; left: 312px;}
+    #p3 .icons li~li{margin-top: 132px;}
+    
+    /*4*/
+    #p4{position: absolute; top: 3665px;}
+    #p4 .title{position: relative; left: 295px;}
+    #p4 .conts{position: relative; top: 100px; left: 312px;}
+
+    /*5*/
+    #p5{position: absolute; top: 4257px;}
+    #p5 .title{position: relative; left: 295px;}
+    #p5 .conts{position: relative; top: 100px; left: 312px;}
+
+    /*6*/
+    #p6{position: absolute; top: 5087px;}
+    #p6 .title{position: relative; left: 295px;}
+    #p6 .process{position: relative; top: 100px; left: 312px;}
+    #p6 .process li{float: left;}
+    #p6 .process li~li{margin-left: 90px;}
+
+    /*7*/
+    #p7{position: absolute; top: 5878px;}
+    #p7 .title{position: relative; left: 295px;}
+    #p7 .conts{position: relative; top: 100px; left: 312px;}
+
+    /*8*/
+    #p8{position: absolute; top: 9533px;}
+    #p8 .title{position: relative; left: 295px;}
+    #p8 .conts{position: relative; top: 100px; left: 312px;}
+
+    /*9*/
+    #p9{position: absolute; top: 12040px;}
+    #p9 .title{position: relative; left: 295px;}
+    #p9 #DB_banner10{position: relative; top: 100px; left: 312px;}
+
+    /*10*/
+    #p10{position: absolute; top: 13281px;}
+    #p10 .title{position: relative; left: 295px;}
+    #p10 .conts{position: relative; top: 100px; left: 312px;}
+    #p10 .conts .coding1{position: absolute;}
+    #p10 .conts .coding2{position: absolute; top: 92px; left: 444px;}
+
+    /*11*/
+    #p11{position: absolute; top: 14179px;}
+    #p11 .title{position: absolute; top: 186px; left: 295px; z-index: 1;}
+
+    /**/
+    #top{position: fixed; right: 0px; bottom: 150px;}
+    
+</style>
+</head>
+
+<body>
+
+    <div id="frame">
+        <div id="p0" >
+            <div class="bg"><img src="img/00_visual.png"></div>
+            <div class="title"><img src="img/00_title.png"></div>
+            <div class="info"><img src="img/00_info.png"></div>
+        </div>
+
+        <div id="p1" data-aos="fade-down" data-aos-duration="1500">
+            <img src="img/01_overview.png">
+        </div>
+
+        <div id="p2" data-aos="fade-down" data-aos-duration="1500">
+            <div class="title"><img src="img/02_title.png"></div>
+            <div class="conts"><img src="img/02_conts.png"></div>
+        </div>
+
+        <div id="p3" data-aos="fade-down" data-aos-duration="1500">
+            <div class="bg"><img src="img/03-05_bg.png"></div>
+            <div class="title"><img src="img/03_title.png"></div>
+            <ul class="icons">
+                <li class="icon1" data-aos="fade-right" data-aos-duration="1000"><img src="img/03_icon1.png"></li>
+                <li class="icon2" data-aos="fade-left" data-aos-duration="1000"><img src="img/03_icon2.png"></li>
+                <li class="icon3" data-aos="fade-right" data-aos-duration="1000"><img src="img/03_icon3.png"></li>
+            </ul>
+        </div>
+
+        <div id="p4" data-aos="fade-down" data-aos-duration="1500">
+            <div class="title"><img src="img/04_title.png"></div>
+            <div class="conts"><img src="img/04_conts.png"></div>
+        </div>
+
+        <div id="p5" data-aos="fade-down" data-aos-duration="1500">
+            <div class="title"><img src="img/05_title.png"></div>
+            <div class="conts"><img src="img/05_conts.png"></div>
+        </div>
+
+        <div id="p6" data-aos="fade-down" data-aos-duration="1500">
+            <div class="title"><img src="img/06_title.png"></div>
+            <ul class="process">
+                <li class="planning"><img src="img/06_planning.png"></li>
+                <li class="design"><img src="img/06_design.png"></li>
+                <li class="publishing"><img src="img/06_publishing.png"></li>
+            </ul>
+        </div>
+
+        <div id="p7" data-aos="fade-down" data-aos-duration="1500">
+            <div class="title"><img src="img/07_title.png"></div>
+            <div class="conts"><img src="img/07_mainpage.png"></div>
+        </div>
+
+        <div id="p8" data-aos="fade-down" data-aos-duration="1500">
+            <div class="title"><img src="img/08_title.png"></div>
+            <div class="conts"><img src="img/08_subpages.png"></div>
+        </div>
+
+        <div id="p9" data-aos="fade-down" data-aos-duration="1500">
+            <div class="title"><img src="img/09_title.png"></div>
+            <!--�����κ���-->
+            <div id="DB_banner10">
+	            <div class="DB_mask">
+		            <ul class="DB_imgSet">
+		            	<li><img src="img/09_mobile1.png" alt=""/></li>
+		            	<li><img src="img/09_mobile2.png" alt=""/></li>
+		            	<li><img src="img/09_mobile3.png" alt=""/></li>
+		            	<li><img src="img/09_mobile4.png" alt=""/></li>
+                        <li><img src="img/09_mobile5.png" alt=""/></li>
+		            </ul>
+	            </div>
+            </div>
+            <script type="text/javascript">
+		            $('#DB_banner10').DB_slideLogoMove({
+		            	key:'b28551',                   //���̼���Ű
+		            	moveSpeed:20,             //�̵��ӵ�(�и���)
+		            	overMoveSpeed:15,         //��ư�����ӵ�
+		            	dir:'left',               //����('left','right')
+		            	overAlpha:0.6             //������ ���İ�(0~1)
+		            });
+                </script>
+            <!--/�����κ���-->
+        </div>
+
+        <div id="p10" data-aos="fade-down" data-aos-duration="1500">
+            <div class="title"><img src="img/10_title.png"></div>
+            <div class="conts">
+                <div class="coding1" data-aos="fade-right" data-aos-duration="1000"><img src="img/10_coding1.png"></div>
+                <div class="coding2" data-aos="fade-left" data-aos-duration="1000"><img src="img/10_coding2.png"></div>
+            </div>
+        </div>
+
+        <div id="p11">
+            <div class="bg"><img src="img/11_bg.png"></div>
+            <div class="title" data-aos="zoom-in" data-aos-duration="1500"><img src="img/11_epilogue.png"></div>
+        </div>
+
+        <div id="top">
+            <a href="#"><img src="img/00_top.png" onmouseover="this.src='img/00_top_h.png'"
+                onmouseout="this.src='img/00_top.png'"width="50px" height="50px"/></a>
+        </div>
+    </div>
+
+    <!--aos body 영역-->
+    <script> AOS.init(); </script>
+    
+   
+</body>
+
+
+</html>
