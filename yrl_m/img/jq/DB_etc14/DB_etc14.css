@@ -1,0 +1,5 @@
+.DB_etc14 {width:140px;height:180px/*사이즈필수*/;position:relative;overflow:hidden;}
+
+#DB_etc14_6 , #DB_etc14_6 li {margin:0;padding:0;list-style:none}
+#DB_etc14_6 img{border:0}
+#DB_etc14_6 li{width:140px;height:180px/*사이즈필수*/;position:relative;overflow:hidden;border:1px solid #dddddd;float:left;margin-left:4px}
