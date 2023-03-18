@@ -16,7 +16,7 @@
    *{padding:0px; margin:0px; list-style: none; font-family: "ubuntu";}
 
     /*프레임, 공통*/
-    #frame{width: 1920px; height: 1053px; margin: auto; overflow: hidden; background: black;}
+    #frame{width: 1920px; height: 4181px; margin: auto; overflow: hidden; background: #FFF7FC;}
 
     /*0*/
     #bg{position: absolute;}
@@ -24,6 +24,27 @@
     #p0 .title{position: absolute; left: 193px; top: 263px;}
     #p0 .nav{position: absolute;}
     #p0 .button{position: absolute; left: 273px; top: 564px;}
+
+    /*1*/
+    #p1{position: absolute;}
+    #p1 .p{position: absolute; top: 1203px; left: 275px;}
+
+    /*2*/
+    #p2{position: absolute; top: 1502px;}
+    #p2 .p{position: absolute; left: 275px;}
+
+    /*3*/
+    #p3{position: absolute; top: 2238px;}
+    #p3 .t{position: absolute; left: 275px;}
+    #p3 .i1{position: absolute; left: 275px; top: 103px;}
+    #p3 .i2{position: absolute; left: 973px; top: 103px;}
+    #p3 .i3{position: absolute; left: 973px; top: 460px;}
+    #p3 .i4{position: absolute; left: 1322px; top: 460px;}
+
+    /*4*/
+    #p4{position: absolute; top: 3177px;}
+    #p4 .t{position: absolute; left: 275px;}
+    #p4 .process{position: absolute; left: 275px; top: 103px; width: 1370px;}
 
     
 </style>
@@ -39,13 +60,47 @@
             <img src="img/title_text.png" class="title" data-aos="fade-right" data-aos-duration="1500">
             <img src="img/button.png" class="button" data-aos="fade-right" data-aos-duration="1500">
         </div>
+
+        <div id="p1" data-aos="fade-up" data-aos-duration="1500">
+            <img src="img/01_p.png" class="p">
+        </div>
+
+        <div id="p2" data-aos="fade-up" data-aos-duration="1500">
+            <img src="img/02_p.png" class="p">
+        </div>
+
+        <div id="p3" data-aos="fade-up" data-aos-duration="1500">
+            <img src="img/03_title.png" class="t">
+            <a href="img/1_galaxy.jpg"><img src="img/03_1.png" class="i1" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"></a>
+            <a href="img/2_vortex.jpeg"><img src="img/03_2.png" class="i2" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"></a>
+            <a href="img/3_clock1.jpg"><img src="img/03_3.png" class="i3" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"></a>
+            <a href="img/4_clock2.jpg"><img src="img/03_4.png" class="i4" onmouseenter="zoomIn(event)" onmouseleave="zoomOut(event)"></a>
+        </div>
+
+        <div id="p4" data-aos="fade-up" data-aos-duration="1500">
+            <img src="img/04_title.png" class="t">
+            <img src="img/process.gif" class="process">
+        </div>
         
     </div>
 
     <!--aos body 영역-->
     <script> AOS.init(); </script>
     
-   
+    <script>
+        function zoomIn(event) {
+          event.target.style.transform = "scale(1.03)";
+          event.target.style.zIndex = 1;
+          event.target.style.transition = "all 0.5s";
+        }
+      
+        function zoomOut(event) {
+          event.target.style.transform = "scale(1)";
+          event.target.style.zIndex = 0;
+          event.target.style.transition = "all 0.5s";
+        }
+    </script>
+
 </body>
 
 
